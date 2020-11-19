@@ -11,12 +11,11 @@ FetchContent_Declare(
   SOURCE_DIR     bux
 )
 FetchContent_MakeAvailable(FetchedBux)
-#add_subdirectory(bux/src)
 
 project(bracketPairing)
 
 list(APPEND CMAKE_CXX_FLAGS "-Wall -Wextra -Wshadow -Wconversion -Wno-parentheses -Wno-unknown-pragmas -Wno-potentially-evaluated-expression -O3 -std=c++2a")
 
 add_library(bracketPairing STATIC BracketBalance.cpp StrLiteralScanner.cpp)
-target_include_directories(bracketPairing PRIVATE ${FetchedBux_SOURCE_DIR}/include)
+target_include_directories(bracketPairing PRIVATE bux/include)
 #add_dependencies(bracketPairing FetchedBux)
