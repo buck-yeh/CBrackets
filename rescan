@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+TOOL_ROOT=..
+$TOOL_ROOT/ScannerGen/scannergen StrLiteralScanner tokens.txt
