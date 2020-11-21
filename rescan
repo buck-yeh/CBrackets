@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
-TOOL_ROOT=..
-$TOOL_ROOT/ScannerGen/scannergen StrLiteralScanner tokens.txt
+if [[ -z "$SCANNERGEN_DIR" ]]; then
+    SCANNERGEN_DIR="../parsergen/ScannerGen"
+fi
+if [[ -x $SCANNERGEN_DIR/scannergen ]]; then
+    SCANNERGEN_DIR="$SCANNERGEN_DIR" $SCANNERGEN_DIR/scannergen StrLiteralScanner tokens.txt
+else
+    echo "$SCANNERGEN_DIR/scannergen missing or not executable"
+fi
