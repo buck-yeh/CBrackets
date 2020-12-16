@@ -14,7 +14,7 @@ FetchContent_MakeAvailable(FetchedBux)
 
 project(bracketPairing)
 
-string(APPEND CMAKE_CXX_FLAGS "-Wall -Wextra -Wshadow -Wconversion -Wno-parentheses -Wno-unknown-pragmas -Wno-potentially-evaluated-expression -O3 -std=c++2a")
+string(APPEND CMAKE_CXX_FLAGS " -Wall -Wextra -Wshadow -Wconversion -Wno-parentheses -Wno-unknown-pragmas -Wno-potentially-evaluated-expression -O3 -std=c++2a")
 
 add_library(bracketPairing STATIC BracketBalance.cpp StrLiteralScanner.cpp)
 target_include_directories(bracketPairing PRIVATE ../bux/include)
