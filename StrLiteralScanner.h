@@ -4,7 +4,7 @@
 #ifndef StrLiteralScannerH
 #define StrLiteralScannerH
 
-#include "ImplScanner.h"
+#include <bux/ImplScanner.h>
 
 namespace bux {
 

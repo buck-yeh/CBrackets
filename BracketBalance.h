@@ -1,7 +1,7 @@
 #ifndef BracketBalanceH
 #define BracketBalanceH
 
-#include "ScannerBase.h"    // bux::C_LexUTF32
+#include <bux/ScannerBase.h>    // bux::C_LexUTF32
 
 namespace bux {
 
