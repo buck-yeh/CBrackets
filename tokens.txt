@@ -1,4 +1,4 @@
-#include        "$SCANNERGEN_DIR/RE_Suite.txt"
+#include        "RE_Suite.txt"
 
 %NAMESPACE      bux
 %NAMEPREFIX     StrLiteral

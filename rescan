@@ -3,7 +3,7 @@ if [[ -z "$SCANNERGEN_DIR" ]]; then
     SCANNERGEN_DIR="../parsergen/ScannerGen"
 fi
 if [[ -x $SCANNERGEN_DIR/scannergen ]]; then
-    SCANNERGEN_DIR="$SCANNERGEN_DIR" $SCANNERGEN_DIR/scannergen StrLiteralScanner tokens.txt
+    $SCANNERGEN_DIR/scannergen StrLiteralScanner tokens.txt -I "$SCANNERGEN_DIR"
 else
     echo "$SCANNERGEN_DIR/scannergen missing or not executable"
 fi
