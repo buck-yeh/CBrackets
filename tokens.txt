@@ -1,8 +1,5 @@
-#include        "RE_Suite.txt"
-
 %NAMESPACE      bux
 %NAMEPREFIX     StrLiteral
-%CHAR_TYPE      bux::C_LexUTF32
 
 _the_very_last_ = c_char|c_str|c_comment|line_comment
 
