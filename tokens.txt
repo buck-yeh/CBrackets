@@ -1,7 +1,7 @@
 %NAMESPACE      bux
 %NAMEPREFIX     StrLiteral
 
-_the_very_last_ = c_char|c_str|c_comment|cpp_comment
+_the_very_last_ = c_char|c_str|c_comment|line_comment
 
 %LOCAL_ACTION_DEFS  [[
 enum
