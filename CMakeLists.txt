@@ -21,6 +21,11 @@ endif()
 project(bracketPairing)
 
 string(APPEND CMAKE_CXX_FLAGS " -Wall -Wextra -Wshadow -O3 -std=c++20")
+IF(DEFINED FETCH_DEPENDEES)
+    string(APPEND CMAKE_CXX_FLAGS " -I${FetchedBux_SOURCE_DIR}/include")
+ELSE()
+    string(APPEND CMAKE_CXX_FLAGS " -I../${DEPENDEE_ROOT}/bux/include")
+ENDIF()
 
 add_library(bracketPairing STATIC BracketBalance.cpp StrLiteralScanner.cpp)
 target_include_directories(bracketPairing PRIVATE ${DEPENDEE_ROOT}/bux/include)
