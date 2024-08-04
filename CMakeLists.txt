@@ -20,7 +20,7 @@ endif()
 
 project(bracketPairing)
 
-string(APPEND CMAKE_CXX_FLAGS " -Wall -Wextra -Wshadow -O3 -std=c++20")
+string(APPEND CMAKE_CXX_FLAGS " -Wall -Wextra -Wshadow -O3 -std=c++23")
 IF(DEFINED FETCH_DEPENDEES)
     string(APPEND CMAKE_CXX_FLAGS " -I${fetchedbux_SOURCE_DIR}/include")
 ELSE()
